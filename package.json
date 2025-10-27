@@ -1,0 +1,19 @@
+{
+  "name": "unit-tests-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "c8 mocha",
+    "test:html": "c8 mocha --reporter json > test-results.json && echo 'Test results saved to test-results.json'",
+    "coverage": "c8 report --reporter=html --reporter=text-summary"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "c8": "^10.1.3",
+    "chai": "^6.2.0",
+    "mocha": "^11.7.4"
+  }
+}

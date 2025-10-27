@@ -102,11 +102,11 @@ describe('arrayUtils', () => {
 
     it('should throw an error for non-array input', () => {
       expect(() => removeDuplicates('not an array')).to.throw(
-        'Input must be an array'
+        'Input must be an array',
       );
       expect(() => removeDuplicates(null)).to.throw('Input must be an array');
       expect(() => removeDuplicates(undefined)).to.throw(
-        'Input must be an array'
+        'Input must be an array',
       );
       expect(() => removeDuplicates(123)).to.throw('Input must be an array');
     });

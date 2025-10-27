@@ -58,13 +58,13 @@ describe('usersListUtils', () => {
 
     it('should throw an error for non-array input', () => {
       expect(() => filterUsersByAge('not an array', 25, 30)).to.throw(
-        'Users must be an array'
+        'Users must be an array',
       );
       expect(() => filterUsersByAge(null, 25, 30)).to.throw(
-        'Users must be an array'
+        'Users must be an array',
       );
       expect(() => filterUsersByAge(undefined, 25, 30)).to.throw(
-        'Users must be an array'
+        'Users must be an array',
       );
     });
   });
@@ -105,11 +105,11 @@ describe('usersListUtils', () => {
 
     it('should throw an error for non-array input', () => {
       expect(() => sortUsersByName('not an array')).to.throw(
-        'Users must be an array'
+        'Users must be an array',
       );
       expect(() => sortUsersByName(null)).to.throw('Users must be an array');
       expect(() => sortUsersByName(undefined)).to.throw(
-        'Users must be an array'
+        'Users must be an array',
       );
     });
   });
@@ -146,11 +146,11 @@ describe('usersListUtils', () => {
 
     it('should throw an error for non-array input', () => {
       expect(() => findUserById('not an array', 1)).to.throw(
-        'Users must be an array'
+        'Users must be an array',
       );
       expect(() => findUserById(null, 1)).to.throw('Users must be an array');
       expect(() => findUserById(undefined, 1)).to.throw(
-        'Users must be an array'
+        'Users must be an array',
       );
     });
   });
@@ -182,13 +182,13 @@ describe('usersListUtils', () => {
 
     it('should throw an error for non-array input', () => {
       expect(() => isEmailTaken('not an array', 'email@test.com')).to.throw(
-        'Users must be an array'
+        'Users must be an array',
       );
       expect(() => isEmailTaken(null, 'email@test.com')).to.throw(
-        'Users must be an array'
+        'Users must be an array',
       );
       expect(() => isEmailTaken(undefined, 'email@test.com')).to.throw(
-        'Users must be an array'
+        'Users must be an array',
       );
     });
   });

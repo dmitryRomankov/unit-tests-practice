@@ -9,7 +9,7 @@ export function filterUsersByAge(users, minAge, maxAge) {
   if (!Array.isArray(users)) {
     throw new Error('Users must be an array');
   }
-  return users.filter(user => user.age >= minAge && user.age <= maxAge);
+  return users.filter((user) => user.age >= minAge && user.age <= maxAge);
 }
 
 /**
@@ -34,7 +34,7 @@ export function findUserById(users, id) {
   if (!Array.isArray(users)) {
     throw new Error('Users must be an array');
   }
-  return users.find(user => user.id === id) || null;
+  return users.find((user) => user.id === id) || null;
 }
 
 /**
@@ -47,5 +47,5 @@ export function isEmailTaken(users, email) {
   if (!Array.isArray(users)) {
     throw new Error('Users must be an array');
   }
-  return users.some(user => user.email === email);
+  return users.some((user) => user.email === email);
 }
